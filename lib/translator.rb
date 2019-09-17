@@ -4,9 +4,10 @@ def load_library(path)
   library = YAML.load_file(path)
   emoticons = {get_meaning: {}, get_emoticon: {}}
   library.each_pair{|key, value|
-    value.map{|emoticon|
-      emoticons[:get_meaning][emoticon] = key
-    }
+    emoticons[:get_meaning][value[1]] = []
+    # value.map{|emoticon|
+    #   emoticons[:get_meaning][emoticon] = key
+    # }
   }
   p emoticons
 end
