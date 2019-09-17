@@ -4,7 +4,7 @@ def load_library(path)
   library = YAML.load_file(path)
   emoticons = {get_meaning: {}, get_emoticon: {}}
   library.each_pair{|key, value|
-    puts value
+    emoticons[:get_meaning][value] = []
   }
   p emoticons
 end
