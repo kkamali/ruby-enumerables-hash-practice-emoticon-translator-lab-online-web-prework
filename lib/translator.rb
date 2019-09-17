@@ -6,7 +6,7 @@ def load_library(path)
   library.each_pair{|key, value|
     emoticons[:get_meaning] => {value: []}
   }
-  emoticons
+  p emoticons
 end
 
 def get_japanese_emoticon
