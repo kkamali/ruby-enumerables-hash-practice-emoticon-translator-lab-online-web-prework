@@ -12,6 +12,7 @@ end
 
 def get_japanese_emoticon(path, emoticon)
   emoticons = load_library(path)
+  return false if filename.blank
   emoticons[:get_emoticon][emoticon]
 end
 
