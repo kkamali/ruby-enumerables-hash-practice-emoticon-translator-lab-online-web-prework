@@ -7,7 +7,7 @@ def load_library(path)
     emoticons[:get_meaning][value[1]] = key
     emoticons[:get_emoticon][value[0]] = value[1]
   }
-  p emoticons
+  emoticons
 end
 
 def get_japanese_emoticon
