@@ -5,8 +5,7 @@ def load_library(path)
   emoticons = {get_meaning: {}, get_emoticon: {}}
   library.each_pair{|key, value|
     value.map{|emoticon|
-      puts emoticon
-      puts "****"
+      emoticons[:get_meaning][emoticon] = []
     }
   }
   p emoticons
